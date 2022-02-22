@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "b98298b2-644b-4912-9a50-32fc61a5cf84",
+		"name": "Merkel Proof Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Proof",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/:address/proof",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						":address",
+						"proof"
+					],
+					"variable": [
+						{
+							"key": "address",
+							"value": "0xED1DaA5eb8c74d36721B6A57690c2FEB3FfCAacF"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Proof",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/:address/proof",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								":address",
+								"proof"
+							],
+							"variable": [
+								{
+									"key": "address",
+									"value": "0xED1DaA5eb8c74d36721B6A57690c2FEB3FfCAacF"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "139"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8b-gwm/l1P86aTMD5hh1iCT8khoyWw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Feb 2022 22:04:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"0x5fe98b2b7dcbfa6c120ac84b4c25cdcd44fe92590183789a5a2c52585640a7e3\",\n    \"0x7efb54b4c79d86ba40fed903eb1357004df78b00ed1c718d97414a65f10ad2c4\"\n]"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
