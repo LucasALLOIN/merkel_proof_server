@@ -4,7 +4,7 @@
 
 1. Clone repository
 ```shell
-git clone git@github.com:nebulis-io/collecteat-backend.git
+git clone git@github.com:LucasALLOIN/merkel_proof_server.git
 ```
 2. Copy env file and fill it
 ```shell
